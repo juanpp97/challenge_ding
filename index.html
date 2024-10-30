@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="toolbar">
+            <div class="toolbar__top">
+                <span class="toolbar__icons">
+                    <img src="./assets/chats.svg" alt="chats">
+                    <span class="chat__count">1</span> 
+                    <span class="legend"> Chats </span> 
+                   </span> 
+                   <span class="toolbar__icons">
+                    <img src="./assets/estados.svg" alt="estados">
+                    <span class="legend"> Estados </span> 
+                   </span>
+                   <span class="toolbar__icons">
+                    <img src="./assets/canales.svg" alt="canales">
+                    <span class="legend"> Canales </span> 
+                   </span>
+                   <span class="toolbar__icons">
+                    <img src="./assets/comunidades.svg" alt="comunidades">
+                    <span class="legend"> Comunidades </span> 
+                   </span>  
+            </div>
+            <div class="toolbar__bottom">
+                <span class="toolbar__icons">
+                    <img src="./assets/settings.svg" alt="ajustes">
+                    <span class="legend"> Ajustes </span> 
+                </span>    
+                <span class="toolbar__icons">
+                    <img src="./assets/foto.jpg" alt="perfil" class="profile__picture">
+                    <span class="legend legend-img"> Perfil </span> 
+                </span>
+            </div>
+        </section>
+
+        <section class="chats">
+            <article class="chats__header">
+                <h1> Chats </h1>
+                <div class="chats__icons">
+                    <span class="toolbar__icons">
+                        <img src="./assets/nuevo.svg" alt="nuevo chat" title="Nuevo chat">
+                    </span>
+                    <span class="toolbar__icons">
+                        <img src="./assets/menu.svg" alt="menu" title="Menu">
+                    </span>
+                </div>
+            </article>
+            <article class="chats__search">
+                <span class="input__icon magnifier">
+                    <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"><title>search</title><path fill="currentColor" d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"></path></svg>
+                </span>
+                <span class="input__icon return">
+                    <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"><title>back</title><path fill="currentColor" d="M12,4l1.4,1.4L7.8,11H20v2H7.8l5.6,5.6L12,20l-8-8L12,4z"></path></svg>
+                </span>
+                <input type="text" placeholder="Buscar">
+            </article>
+            <article class="chats__category">
+                <span class="category__pill" id="selected">
+                    Todos
+                </span>
+                <span class="category__pill">
+                    No leídos
+                </span>
+                <span class="category__pill">
+                    Favoritos
+                </span>
+                <span class="category__pill">
+                    Grupos
+                </span>
+            </article>
+            <article class="chats__container">
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 1 </h3>
+                                <p class="chat__time"> 16:44 </p>
+                            </div>
+                            <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 2 </h3>
+                                <p class="chat__time"> 16:35 </p>
+                            </div>
+
+                            <span class="chat__info__wrapper">
+                                <img src="./assets/visto.svg" alt="" class="chat__status">
+                                <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                            </span>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 3 </h3>
+                                <p class="chat__time"> 16:08 </p>
+                            </div>
+
+                            <span class="chat__info__wrapper">
+                                <img src="./assets/enviado.svg" alt="" class="chat__status">
+                                <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                            </span>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 4 </h3>
+                                <p class="chat__time"> 15:54 </p>
+                            </div>
+
+                            <span class="chat__info__wrapper">
+                                <p class="chat__snippet"> Reaccionó con 👍 a: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe?" </p>
+                            </span>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat active">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 5 </h3>
+                                <p class="chat__time"> 15:34 </p>
+                            </div>
+
+                            <span class="chat__info__wrapper">
+                                <img src="./assets/recibido.svg" alt="" class="chat__status">
+                                <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+
+                            </span>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat not-read">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 6 </h3>
+                                <p class="chat__time"> 15:12 </p>
+                            </div>
+                            <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                            <span class="chat__count">2</span> 
+
+                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 7 </h3>
+                                <p class="chat__time"> 14:52 </p>
+                            </div>
+                            <p class="chat__snippet"> Reaccionaste con ❤️ a: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe?" </p>                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 8 </h3>
+                                <p class="chat__time"> 12:30 </p>
+                            </div>
+                            <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 9 </h3>
+                                <p class="chat__time"> Ayer </p>
+                            </div>
+                            <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__picture">
+                        <img src="./assets/profile.webp" alt="perfil" class="profile__picture">
+                    </div>
+                    <div class="chat__info"> 
+                       <div class="info__wrapper">
+                            <div class="row">
+                                <h3 class="chat__name"> Persona 10 </h3>
+                                <p class="chat__time"> Ayer </p>
+                            </div>
+                            <p class="chat__snippet"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe? </p>
+                       </div>
+                    </div>
+                </div>
+              
+            </article>
+        
+        </section>
+
+        <section class="chat-content">
+            <header class="content__header">
+                <div class="header__info">
+                    <span class="chat__picture">
+                        <img src="./assets/profile.webp" alt="Foto de perfil">
+                    </span>
+                    <div class="info__wrapper">
+                        <h3 class="chat__name"> Persona 5 </h3>
+                        <h3 class="chat__last_conn"> últ. vez hoy a la(s) 15:45 </h3>
+                    </div>
+                </div>
+                <div class="header__icons">
+                    <span class="toolbar__icons">
+                        <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"><title>search</title><path fill="currentColor" d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"></path></svg>
+                    </span>    
+                    <span class="toolbar__icons">
+                        <img src="./assets/menu.svg" alt="menu">
+                    </span>
+                </div>
+            </header>
+            <article class="content__container">
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:20</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:21</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:22</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:23</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:24</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:25</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:26</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:27</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:28</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:29</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:30</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:31</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:32</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:33</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:34</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:35</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:36</p>
+                        <span class="status__icon"> <img src="assets/visto.svg"></span>
+                    </div>
+                </div>
+                <div class="message receiver">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">11:37</p>
+                    </div>
+                </div>
+                <div class="message sender">
+                    Este es un mensaje de prueba
+                    <div class="mensaje__status">
+                        <p class="status__time">15:34</p>
+                        <span class="status__icon"> <img src="assets/recibido.svg"></span>
+                    </div>
+                </div>
+                
+            </article>
+            <footer class="content__footer">
+                <img src="./assets/emojis.svg" alt="Emojis">
+                <img src="./assets/adjuntar.svg" alt="Adjuntar">
+                <input type="text" placeholder="Escribe un mensaje">
+                <img src="./assets/audio.svg" alt="Enviar audio">
+
+            </footer>
+        </section>
+    </main>
+    <script>
+        const messageContainer = document.querySelector('.content__container');
+
+        function scrollToBottom() {
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+        }
+
+        window.onload = scrollToBottom;
+
+    </script>
+</body>
+</html>
